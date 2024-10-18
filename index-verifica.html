@@ -1,0 +1,161 @@
+<style>
+    /* Inicio CSS Destaques Desktop*/
+    .newdestaques {
+      display: flex;
+      padding: 20px;
+      justify-content: center;
+    }
+
+    .box {
+      width: 300px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      margin: 10px;
+      border: 1px solid #d4d2d2;
+      border-radius: 10px;
+      gap: 7px;
+    }
+    /* Fim CSS Destaques Desktop*/
+
+
+    /* Inicio CSS Destaques Mobile*/
+    @media screen and (max-width:600px) {
+      .newdestaques {
+        display: none;
+      }
+
+      .newdestaques-mobile {
+        display: grid;
+        padding: 10px;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        /* 2 colunas de tamanhos iguais */
+        grid-template-rows: 1fr 1fr;
+        /* 2 linhas de tamanhos iguais */
+      }
+
+      .box-mobile {
+        width: 170px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        margin: 10px;
+        border: 1px solid #d4d2d2;
+        border-radius: 10px;
+        gap: 3px;
+      }
+    }
+
+    @media screen and (min-width:601px) {
+      .newdestaques-mobile {
+        display: none;
+      }
+    }
+
+    /* Fim CSS Destaques Mobile*/
+  </style>
+
+<!-- -- Inicio HTML Destaques Desktop -- -->
+  <div class="newdestaques">
+    <div class="box">
+      <div>
+        <img src="https://trialm1.magehub.com.br/media/wysiwyg/banners/retirada50x50.png"
+          style="width: 50px;height: 50px;">
+      </div>
+      <p style="line-height: 0.8rem;">
+        <span style="color: red;">Retire no local</span>
+        <br>
+        <span style="font-size: .625rem;text-align: start;">Loja física em São Paulo</span>
+      </p>
+    </div>
+    <div class="box">
+      <div>
+        <img
+          src="https://storage.crisp.chat/users/upload/session/f9349c66aaf8e800/entrega-40-x-40-px-70-x-70-px_1p7mva4.png"
+          style="width: 50px;height: 50px;">
+      </div>
+      <p style="line-height: 0.8rem;">
+        <span style="color: red;">Entrega</span>
+        <br>
+        <span style="font-size: .625rem;text-align: start;">Para todo o Brasil</span>
+      </p>
+    </div>
+    <div class="box">
+      <div>
+        <img src="https://trialm1.magehub.com.br/media/wysiwyg/.thumbs/wysiwyg/banners/pagamento50x50.png"
+          style="width: 50px;height: 50px;">
+      </div>
+      <p style="line-height: 0.8rem;">
+        <span style="color: red; font-size: 16px;">Em até 6x sem juros</span>
+        <br>
+        <span style="font-size: .625rem;text-align: start;">Consulte as condições</span>
+      </p>
+    </div>
+    <div class="box">
+      <div>
+        <img src="https://trialm1.magehub.com.br/media/wysiwyg/.thumbs/wysiwyg/banners/comprasegura50x50.png"
+          style="width: 50px;height: 50px;">
+      </div>
+      <p style="line-height: 0.8rem;">
+        <span style="color: red;">Compra Segura</span>
+        <br>
+        <span style="font-size: .625rem;text-align: start;">Seus dados protegidos</span>
+      </p>
+    </div>
+  </div>
+  <!-- -- Fim HTML Destaques Desktop -- -->
+
+  <!-- -- Inicio HTML Destaques Mobile -- -->
+  <div class="newdestaques-mobile">
+    <div class="box-mobile">
+      <div>
+        <img src="https://trialm1.magehub.com.br/media/wysiwyg/banners/retirada50x50.png"
+          style="width: 35px;height: 35px;">
+      </div>
+      <p style="line-height: 0.8rem;">
+        <span style="color: red;">Retire no local</span>
+        <br>
+        <span style="font-size: .475rem;text-align: start;">Loja física em São Paulo</span>
+      </p>
+    </div>
+    <div class="box-mobile">
+      <div>
+        <img
+          src="https://storage.crisp.chat/users/upload/session/f9349c66aaf8e800/entrega-40-x-40-px-70-x-70-px_1p7mva4.png"
+          style="width: 35px;height: 35px;">
+      </div>
+      <p style="line-height: 0.8rem;">
+        <span style="color: red;">Entrega</span>
+        <br>
+        <span style="font-size: .475rem;text-align: start;">Para todo o Brasil</span>
+      </p>
+    </div>
+    <div class="box-mobile">
+      <div>
+        <img src="https://trialm1.magehub.com.br/media/wysiwyg/.thumbs/wysiwyg/banners/pagamento50x50.png"
+          style="width: 35px;height: 35px;">
+      </div>
+      <p style="line-height: 0.8rem;">
+        <span style="color: red; font-size: 11px;">Fomas de pagamento</span>
+        <br>
+        <span style="font-size: .475rem;text-align: start;">Cartão de Credito, Boleto e PIX</span>
+      </p>
+    </div>
+    <div class="box-mobile">
+      <div>
+        <img src="https://trialm1.magehub.com.br/media/wysiwyg/.thumbs/wysiwyg/banners/comprasegura50x50.png"
+          style="width: 35px;height: 35px;">
+      </div>
+      <p style="line-height: 0.8rem;">
+        <span style="color: red;">Compra Segura</span>
+        <br>
+        <span style="font-size: .475rem;text-align: start;">Seus dados protegidos</span>
+      </p>
+    </div>
+  </div>
+  <!-- -- Fim HTML Destaques Mobile -- -->
